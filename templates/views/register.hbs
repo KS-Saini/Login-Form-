@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        .heading {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            color: aqua;
+            font-family: cursive;
+        }
+
+        .headform {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 80vh;
+        }
+
+        .headlabel {
+            font-size: 22px;
+            font-weight: 400;
+            padding: 8px;
+        }
+
+        .firstdiv {
+            padding: 5px;
+            width: 400px;
+            outline: none;
+            border-radius: 8px;
+            border: 2px solid black;
+        }
+
+        .seconddiv {
+            padding: 5px;
+            width: 400px;
+            outline: none;
+            border-radius: 8px;
+            border: 2px solid black;
+        }
+
+        .thirddiv {
+            padding: 5px;
+            width: 400px;
+            outline: none;
+            border-radius: 8px;
+            border: 2px solid black;
+        }
+
+        .fristbtn {
+            font-size: 22px;
+            outline: none;
+            border: 2px solid black;
+            border-radius: 9px;
+            padding: 4px;
+            margin: 10px;
+        }
+
+        .fristbtn:hover {
+            cursor: pointer;
+            background: white;
+            color: black;
+            font-weight: 500;
+        }
+
+        @media (max-width:400px) {
+            .headinput {
+                width: 290px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 class="heading">Welcome to Kuldeep Saini</h1>
+
+    <form method="POST" action="/register" class="headform">
+        <label class="firstlabel headlabel">Name: </label>
+        <input type="text" name="firstname" class="firstdiv headinput"> <br> <br>
+
+        <label class="secondlabel headlabel">lastname: </label>
+        <input type="text" name="lastname" class="seconddiv headinput"> <br>
+
+        <label class="thirdlabel headlabel">password: </label>
+        <input type="text" name="password" class="thirddiv headinput"> <br>
+
+        <label class="thirdlabel headlabel">Cpassword: </label>
+        <input type="text" name="cpassword" class="thirddiv headinput">
+
+        <button class="fristbtn">Sumbit</button>
+    </form>
+</body>
+
+</html>
